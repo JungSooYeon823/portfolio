@@ -20,7 +20,7 @@
 	 -  [비즈니스 팀 요청 사항](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%8C%80-%EC%9A%94%EC%B2%AD-%EC%82%AC%ED%95%AD)
 	
 - [STAGE 2: 액션 플랜](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#-stage-2-액션-플랜)
-	- [프로덕트 팀 액션 플랜](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#프로덕트-팀-액션-플랜)
+	- [프로덕트 팀 액션 플랜](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%ED%8C%80-%EC%9A%94%EC%B2%AD-%EC%82%AC%ED%95%AD)
  	- [마케팅 팀 액션 플랜](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#마케팅-팀-액션-플랜)
   	- [비즈니스 팀 액션 플랜](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#비즈니스-팀-액션-플랜)   
 <br>
