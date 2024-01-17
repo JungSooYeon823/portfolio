@@ -47,9 +47,8 @@ Project Link | Associated | Tools | Project Description
 
 ### 📂 Course Certification
 
-- [Advanced SQL: MySQL Data Analysis and Business Intelligent](https://ude.my/UC-6a752a95-d22b-4710-bd1a-e227056ad481) | Udemy: Maven Analytics
-- [Advanced NLP with spaCy](https://www.datacamp.com/statement-of-accomplishment/course/21cbd0b3646b8cc477fff5630e8d20e6593ac9e8) | DataCamp
-- [Natural Language Processing with spaCy](https://www.datacamp.com/statement-of-accomplishment/course/05bad291fd71acbd1fa49fa7e319ce1c66440f99) | DataCamp
-- [Introduction to Natural Language Processing in Python](https://www.datacamp.com/statement-of-accomplishment/course/c6332b638b5fa9af2f61c6ef96a34ece9afbf278) | DataCamp
-- [Data Science](https://drive.google.com/file/d/15jI41wG9-IJpw9wQnerdvYVDb6MDlL6D/view?usp=sharing) | Binar x Kominfo RI: Digital Talent Scolarship
+- 데이터 사이언스 스쿨 | 제로베이스 
+- 백문이불여일타_데이터 분석을 위한 기초-고급 SQL | 인프
+- 모두를 위한 데이터 사이언스 | edwith
+- 데이터 시각화를 위한 태블로 | edwith
 
