@@ -1,11 +1,12 @@
 # 정수연 | JUNG SOO YEON  < PROJECT Portfolio >
 
 **Table of Contens :**
-- [Data Engineering](https://github.com/faizns/Faizs-Data-Portofolio#-data-ngineering)
-- [Python: 데이터분석 , 머신러닝](https://github.com/faizns/Faizs-Data-Portofolio#-python:-data-analysis-and-machine-learning)
-- [SQL](https://github.com/faizns/Faizs-Data-Portofolio#-sqlg)
-- [Data visualization](https://github.com/faizns/Faizs-Data-Portofolio#-dashboard)
-- [Course Certification](https://github.com/faizns/Faizs-Data-Portofolio#-complated-course-and-certification)
+
+- Data Engineering
+- Python: 데이터분석 , 머신러닝
+- SQL
+- Data visualization
+- Course Certification
 
 
 <br>
