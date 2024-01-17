@@ -1,290 +1,237 @@
 # RFM 분석 및 클러스터링 기반 고객 세분화를 통한 맞춤 상품 제안 및 세그먼트 활용 전략 수립
 <br>
 
-**Tool** : Jupyter Notebook | [Link Notebook](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/Predict%20Customer%20Personality.ipynb)<br>
+**Tool** : Jupyter Notebook | [Link Notebook](https://github.com/JungSooYeon823/portfolio/blob/main/2.RFM%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81%20%EA%B8%B0%EB%B0%98%20%EA%B3%A0%EA%B0%9D%20%EC%84%B8%EB%B6%84%ED%99%94%EB%A5%BC%20%ED%86%B5%ED%95%9C%C2%A0%EB%A7%9E%EC%B6%A4%20%EC%83%81%ED%92%88%20%EC%A0%9C%EC%95%88%20%EB%B0%8F%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%99%9C%EC%9A%A9%20%EC%A0%84%EB%9E%B5%20%EC%88%98%EB%A6%BD/RFM%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81%20%EA%B8%B0%EB%B0%98%20%EA%B3%A0%EA%B0%9D%20%EC%84%B8%EB%B6%84%ED%99%94%EB%A5%BC%20%ED%86%B5%ED%95%9C%C2%A0%EB%A7%9E%EC%B6%A4%20%EC%83%81%ED%92%88%20%EC%A0%9C%EC%95%88%20%EB%B0%8F%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%99%9C%EC%9A%A9%20%EC%A0%84%EB%9E%B5%20%EC%88%98%EB%A6%BD.ipynb.pdf)<br>
 **Programming Language** : Python <br>
 **Libraries** : Pandas, NumPy, sklearn <br>
 **Visualization** : Matplotlib, Seaborn <br>
-**Source Dataset** : Rakamin Academy <br>
+**Source Dataset** : [Kaggle Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data) <br>
 <br>
 <br>
 
 **Table of Contents**
-- [STAGE 0: Problem Statement](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-0-problem-statement)
-	- [Introduction](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#introduction)
-	- [Goal](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#goal)
-	- [Objective](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#objective)
-- [STAGE 1: Data Preparation](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-1-data-preparation)
-	- [Data Quality Asssessment](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#data-quality-asssessment)
-	- [Feature Engineering](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#feature-engineering)
-- [STAGE 2: Data Exploration](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-2-data-exploration)
-	- [Conversion Rate by Income, Spending, and Age](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#conversion-rate-by-income-spending-and-age)
-	- [Income and Total Spending](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#income-and-total-spending)
-- [STAGE 3: Data Modeling with K-Means Clustering](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-3-data-modeling-with-k-means-clustering)
+- [STAGE 0: 프로젝트 개요](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-0-problem-statement)
+	- [기획 의도](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#introduction)
+	- [문제 정의](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#goal)
+	- [분석 목표](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#objective)
+- [STAGE 1: 데이터 전처리](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-1-data-preparation)
+	- [결측치 & 중복 데이터 처리](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#data-quality-asssessment)
+	- [변수 처리](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#feature-engineering)
+- [STAGE 2: EDA](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-2-data-exploration)
+	- [판매 트렌드](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#conversion-rate-by-income-spending-and-age)
+	- [국가](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#income-and-total-spending)
+	- [상](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#income-and-total-spending)	
+- [STAGE 3:RFM 분석](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-3-data-modeling-with-k-means-clustering)
 	- [Pre-processing](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#pre-processing)
 	- [Modeling](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#modeling)
 	- [Evaluation](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#evaluation)
-- [STAGE 4: Customer Personality Analysis](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-4-customer-personality-analysis)
-- [STAGE 5: Business Recommendation](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-5-business-recommendation)
+- [STAGE 4: K-means 클러스터링](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-4-customer-personality-analysis)
+- [STAGE 5: 장바구니 분석, 추천시스템](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-5-business-recommendation)
 <br>
 <br>
 
 ---
 
-## 📂 **STAGE 0: Problem Statement**
+## 📂 **STAGE 0: 프로젝트 개요**
 
-### Introduction
-Memahami bagaimana karakteristik atau perilaku pelanggan dalam melakukan transaksi sangat penting untuk mengatur strategi marketing dari sebuah perusahaan. Dengan memahami preferensi, kebutuhan, dan pola pembelian pelanggan, perusahaan dapat memberikan treatment yang tepat untuk setiap individu berdasarkan permasalahan yang dihadapinya. Dengan mempertimbangkan faktor-faktor ini, perusahaan dapat memberikan pengalaman yang lebih baik kepada pelanggan, meningkatkan kepuasan mereka dalam bertransaksi, dan pada akhirnya meningkatkan performa penjualan secara keseluruhan. Untuk menganalisis karakteristik atau perilaku pelanggan, pendekatan clustering dapat digunakan untuk mengelompokkan pelanggan ke dalam segmen-segmen yang berbeda, yang kemudian dapat memberikan insight berharga dalam menyusun strategi marketing yang lebih efektif dan memenuhi kebutuhan setiap kelompok pelanggan dengan lebih baik. Dengan demikian, memahami karakteristik pelanggan melalui analisis clustering merupakan langkah penting dalam mengoptimalkan strategi penjualan dan mencapai keberhasilan jangka panjang bagi perusahaan.<br>
+### 기획 의도
+기존의 일반적인 상품 추천보다 고객의 특성과 선호도를 고려한 개인화된 상품 추천 서비스를 제공하여, 고객 만족도를 높이는 것이 목표 <br>
 <br>
 
-### Goal
-Tujuan dari analisis profil dan perilaku pelanggan dengan pendekatan clustering adalah untuk memahami pelanggan dengan lebih baik, menyediakan layanan yang lebih personal, meningkatkan performa penjualan, dan membangun hubungan yang kuat dengan pelanggan.<br>
+### 문제 정의
+RFM 분석과 K-means 클러스터링을 통해 고도화된 고객 세분화를 통해, 보다 고객특성에 맞는 맞춤 상품 제안 .<br>
 <br>
 
-### Objective
-- Membuat model mechine learning yang dapat mengelompokkan pelanggan ke dalam segmen-segmen yang berbeda berdasarkan karakteristik atau perilaku mereka.
-- Mengekstraksi insight yang lebih mendalam tentang profil dan perilaku pelanggan.
-- Menentukan strategi bisnis yang efektif dari hasil clustering.<br>
+### 분석 목표 
+고객 세분화 및 상품 추천 결과를 기반으로 한 효과적인 전략을 제시하여 ,매출 증대 및 이탈 방지
 
 <br>
 <br>
 
 ---
-## 📂 **STAGE 1: Data Preparation**
-### Data Quality Asssessment
-Dataset memiliki 2240 baris dan 30 fitur. Asesmen data dilakukan untuk memastikan bahwa data yang digunakan untuk analisis selanjutnya sudah siap dan sesuai dengan kebutuhan analisis. Hal yang dilakukan:
-- Memeriksa missing value pada data
-- Memeriksa duplikasi data
-- Memeriksa tipe dan konsistensi nilai
-- Memeriksa outlier atau data yang tidak biasa (anomali)
+## 📂 **STAGE 1: 데이터 전처리**
+### 결측치 & 중복 데이터 처리
 
-Tabel 1 — Hasil Data Quality Assessment
- **Data Assessment** | **Finding**  | **Cleaning** 
---------------------|--------------|--------------
-Missing values | Tidak terdapat missing value | -
-Duplikat | Tidak terdapat duplikat data | -
-Fitur atau nilai yang tidak sesuai | Tipe data `Dt_Customer` sebaikkanya datettime | Mengubah tipe data menjadi datteime
-Anomali atau outlier | Secara keseluruhan fitur memiliki outlier. Terlihat juga fitur `Income` dan `Year_Birth` memiliki nilai yang ekstrim  | Handling outlier menggunakan IQR.
+ **구분** | **데이터 전처리**  | 
+--------------------|--------------|
+결측치 |  CustomerID 의 결측치는 약 25%, Description 은 0.27%로 ,분석에 편향이 발생할 수 있으므로, 삭제 처리
+중복 데이터 |  중복 데이터 확인됨으로, keep=False로 설정하여, 중복 데이터 삭제 
 <br>
 
-### Feature Engineering
-Pada tahap feature engineering, dilakukan pembuatan feature baru berdasarkan feature yang sudah ada dengan tujuan untuk membuat analisis menjadi lebih insightful. Feature baru ini dapat mengungkap informasi tambahan atau menggabungkan beberapa fitur yang saling berhubungan untuk membentuk fitur yang lebih kuat.
+### 변수 처리 
 
-Tabel 2 — Feature Engineering
- **New Feature** | **Source** |
+ **변수명** | **변수 설명** |
 -----------------|--------------|
-Membership Duration | 2023 - Dt_Customer  
-Age_Categories | Age
-Total_Children | Kidhome + Teenhome
-Total_Transaction | NumDealsPurchases + NumWebPurchases + NumCatalogPurchases + NumStorePurchases
-Total_Spending | MntCoke + MntFruits + MntMeatProducts + MntFishProducts + MntSweet
-Total_Accepted_Campaign | AcceptedCmp1 + AcceptedCmp2 + AcceptedCmp3 + AcceptedCmp4 + AcceptedCmp5
-CVR | Total_Transaction x NumWebVisitsMonth/100
+Year | 주문 년도 
+Month | 주문 월
+Day | 주문 일
+Day_of_week | 주문 요일
+YearMonthDay | 주문년도-월-일
+YearMonth | 주문년도-월
+Hour | 시간
+Total_purchase | 제품단가 X 가격 => 총 구매금액
+
+
 
 <br>
 <br>
 
-## 📂 **STAGE 2: Data Exploration**
-### Conversion Rate by Income, Spending, and Age
-Pada tahap ini, dilakukan analisis konversi rate untuk mendapatkan wawasan tentang persentase pengunjung situs web dan tindakan yang dilakukan selama kunjungan mereka. Tujuan analisis ini adalah untuk melihat apakah tindakan pengunjung tersebut berujung pada transaksi pembelian atau tidak. Dengan demikian, perusahaan dapat memahami perilaku pengunjung dan mengidentifikasi peluang untuk meningkatkan tingkat konversi serta keberhasilan campaign pemasaran mereka.
+## 📂 **STAGE 2: EDA**
+### 판매 트렌드
 
-<br>
-<p align="center">
-    <kbd> <img width="1000" alt="cvr" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/cd694ce7-cb4f-409e-b8b5-3ae2272134dd"> </kbd> <br>
-    Gambar 1 — Plot Korelasi Conversion Rate (CVR) dengan Pendapatan, Total Pengeluaran, dan Usia
-</p>
-<br>
+![20240117_142526](https://github.com/JungSooYeon823/portfolio/assets/121957252/c7cecfe5-24b7-4a23-86cf-9cd8f9f947c8)
 
-Terdapat temuan bahwa **pendapatan dan total spending memiliki korelasi positif yang signifikan terhadap tingkat konversi**. Hal ini menunjukkan bahwa **semakin tinggi pendapatan dan total spending seseorang, semakin besar kemungkinan mereka melakukan pembelian**. Faktor-faktor seperti kemampuan finansial yang lebih baik dan persepsi nilai yang tinggi terhadap produk dapat menjadi penyebab korelasi positif ini. Oleh karena itu, perusahaan dapat memanfaatkan temuan ini untuk mengoptimalkan strategi pemasaran mereka. Mereka dapat fokus pada target audiens dengan pendapatan dan total spending yang lebih tinggi, dengan tujuan meningkatkan peluang konversi dan keberhasilan marketing campaign secara keseluruhan. Di sisi lain, **fitur usia cenderung tidak memiliki korelasi yang signifikan terhadap tingkat konversi**. Hal ini berarti usia tidak menjadi faktor dominan yang mempengaruhi keputusan konsumen dalam melakukan konversi atau pembelian. <br>
-<br>
+-  2010-12 ~ 2011-08까지는 안정적인 판매추세를 보이나,2011-09~10월에 판매량이 급증 
+- '2011-12 - 09일' 최대 매출 184170$ 달성 ⇒ 평균 매출 대비 543% 상승 시기
 
-### Income and Total Spending
-Analisis korelasi antara Income dan total spending penting dilakukan karena kedua fitur ini memiliki hubungan yang erat dalam konteks keuangan dan pengeluaran individu atau pelanggan. Dengan menganalisis korelasi antara kedua fitur ini, dapat dipahami sejauh mana tingkat pendapatan seseorang mempengaruhi pola pengeluaran mereka.
+![20240117_142704](https://github.com/JungSooYeon823/portfolio/assets/121957252/dba038a8-f296-423c-87f2-480125f0d2de)
 
-<br>
-<p align="center">
-    <kbd> <img width="500" alt="total spending income" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/73d7c91c-9a00-4801-8e83-a7d300124827"> </kbd> <br>
-    Gambar 2 — Plot Korelasi Pendapatan dengan Total Pengeluaran
-</p>
-<br>
+- 9월 기점으로 판매 금액 증가 추세 ⇒11월 최대 판매 금액 달성
+- 목요일 낮 12시에 최대 매출이 발생하며,주로  평일 화~목요일/ 낮 12시~오후 14시의 판매량이 가장 우수하다.
 
-Hubungan korelasi positif yang kuat antara Income dan total spending menunjukkan **adanya hubungan yang signifikan antara tingkat pendapatan seseorang dengan pola pengeluaran mereka**. Hal ini mengindikasikan bahwa **semakin tinggi pendapatan seseorang, kemungkinan besar mereka juga memiliki pengeluaran yang lebih tinggi**. Dalam konteks bisnis, pemahaman ini dapat membantu perusahaan dalam mengenali segmen pelanggan yang memiliki potensi pembelian yang lebih tinggi dan merancang strategi pemasaran yang tepat untuk meningkatkan keterlibatan dan kepuasan pelanggan.
 
-<br>
-<br>
+### 국가
+![20240117_142808](https://github.com/JungSooYeon823/portfolio/assets/121957252/c10d911e-d7c6-4a67-b0ad-c72171433ce5)
+
+- 'United Kingdom'(영국)의 판매 점유율은 약 89%로, 과반수 이상의 매출을 점유하고 있다.
+- 'Saudi Arabia' (사우디 아라비아)의 판매 금액이 가장 낮으며,약 0.023%의 점유율
+
+
+### 상품
+![20240117_142825](https://github.com/JungSooYeon823/portfolio/assets/121957252/e8ca0f9d-b74a-40ed-9580-60d1c9aa4e55)
+
+- 가장 자주 구매하는 상품은  'WHITE HANGING HEART T-LIGHT HOLDER' (하얀색 하트 모양의 촛불 홀더)
+- 가장 많은 수량 구매된 상품은 'PAPER CRAFT LITTLE BIRDIE' (종이로 만든 새모형)
+
+  ⇒ 공통적으로 조명,장식품 등 상품이 상위 10위안에 랭크되어 있음을 알 수 있다.
+  
 
 ---
-## 📂 **STAGE 3: Data Modeling with K-Means Clustering**
-### Pre-processing
-Sebelum melakukan data modeling, terdapat beberapa tahap pre-processing data yang perlu dilakukan yaitu:
-- **Fitur yang tidak diperlukan** untuk model akan **dihapus** agar data lebih terfokus. 
-- Fitur kategorikal akan di-**encoding** agar dapat diolah oleh algoritma machine learning. 
-- Dilakukan **standardisasi** fitur untuk memastikan skala data seragam dan menghindari bias dalam model.<br>
-<br>
+## 📂 **STAGE 3: RFM분석**
 
-### Modeling
-Setelah pre-processing data selesai, tahap berikutnya adalah menggunakan metode **Principal Component Analysis (PCA)**. PCA digunakan untuk mengurangi dimensi data dengan mempertahankan informasi yang signifikan. Dengan mengurangi dimensi data, dapat mengoptimalkan kinerja model dan mengatasi masalah multicollinearity antara fitur. Selanjutnya, langkah penting dalam proses ini adalah menentukan jumlah cluster terbaik. Dalam analisis ini, **Distortion Score dan Elbow Method** digunakan untuk memilih jumlah cluster yang optimal. Berdasarkan hasil analisis, **jumlah cluster terbaik yang ditemukan adalah 4**.
 
-<br>
-<p align="center">
-    <kbd> <img width="600" alt="distortion" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/176ddb7a-2357-49c0-8d06-1222973b0229"> </kbd> <br>
-    Gambar 3 — Plot Distortion Scoce Elbow
-</p>
-<br>
+![20240117_145214](https://github.com/JungSooYeon823/portfolio/assets/121957252/542d6bdf-76ed-46c7-953f-6a2d50c7fde2)
 
-Setelah menentukan jumlah cluster yang optimal, dilakukan **clustering menggunakan algoritma K-means**. Algoritma ini akan mengelompokkan data ke dalam cluster berdasarkan kesamaan fitur. Dengan melakukan clustering, dapat mengidentifikasi pola atau kelompok yang ada dalam data dan memahami karakteristik masing-masing cluster.
 
-<br>
-<p align="center">
-    <kbd> <img width="600" alt="cluster" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/dda584d5-8519-4775-92c9-f7519bee8c6f"> </kbd> <br>
-    Gambar 4 — Hasil Clustering menggunakan K-means
-</p>
-<br>
 
-Dari plot hasil pemodelan dan pengelompokan data menggunakan metode clustering, terlihat bahwa **cluster-cluster yang terbentuk terpisah dengan baik** dan mengelompokkan data ke dalam kelompok yang berbeda-beda. Hal ini menunjukkan bahwa algoritma clustering yang digunakan berhasil dalam membedakan dan menggolongkan data berdasarkan karakteristik yang dimiliki.<br>
-<br>
 
-### Evaluation
+#### RFM Segment 특성 분석 
 
-<p align="center">
-    <kbd> <img width="400" alt="score" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/1c6de7e4-aea2-4cfc-a6a8-402ab4a5b6c2"></kbd> <br>
-    Gambar 5 — Hasil Evaluasi
-</p>
-<br>
+ **RFM Segment 구분** | **설명** |
+-----------------|--------------|
+VIP|가장 최근 활동/ 가장 높은 구매 빈도 /가장 높은 구매금액 (높은 가치 창출 고객)
+Loyal custoemr|최근 활동 /VIP에 비해 낮은 구매 빈도/ VIP에 비해 낮은 금액 소진   (충성도 높은 고객)
+Potential Loyalists|상대적으로 최근 구매 /높은 구매 빈도/ 높은 구매 금액  (잠재적 고객)
+New customers| 최근 유입/ 낮은 빈도/낮은 구매 금액 (신규 고객)
+Promising|평균적인 최근성/평균 빈도/평균 구매 금액 (가치를 높일 가능성 있는 고객)
+Need Attention|낮은 구매 빈도/낮은 구매 금액  (관심이 필요한 고객)
+About To Sleep|활동은 있었지만, 더 이상 활발하지 않은 고객 (잠들기 직전 고객)
+Cannot lose them|평균 이하 최근성/낮은 구매 빈도/평균 구매 금액 값을 가진 고객(잃을수 없는 고객)
+At-Risk |낮은 최근성/낮은 구매 빈도/평균 구매 금액 값을 가진 고객 (이탈 위험 고객)
+Hibernating | 가장 낮은 최근성/가장 낮은 빈도를 가진 고객 
 
-Evaluasi hasil model menggunakan **Silhouette Score memberikan rekomendasi bahwa jumlah cluster terbaik adalah 4**. Hal ini didasarkan pada fakta bahwa nilai Silhouette Score pada jumlah cluster tersebut adalah yang tertinggi, yaitu 0.535. Silhouette Score merupakan metrik evaluasi yang menggambarkan seberapa baik objek-objek dalam satu cluster berada dalam kumpulan data mereka sendiri dibandingkan dengan cluster lainnya. Semakin tinggi nilai Silhouette Score, semakin baik cluster-cluster tersebut terpisah. <br>
-<br>
-<br>
 
 ---
+## 📂 **STAGE 4: K-means 클러스터링**
+![20240117_143645](https://github.com/JungSooYeon823/portfolio/assets/121957252/8950c8c2-14ea-4a80-b012-0f329df0f2dd)
 
-## 📂 **STAGE 4: Customer Personality Analysis**
-Customer Personality Analysis bertujuan untuk **memahami perbedaan dan kesamaan antara cluster-cluster tersebut, serta mengidentifikasi karakteristik unik yang mungkin dimiliki oleh setiap kelompok**. Dengan pemahaman yang lebih mendalam tentang karakteristik antar cluster, perusahaan dapat mengambil tindakan yang lebih tepat dan mengarahkan strategi bisnis yang lebih spesifik untuk setiap kelompok pelanggan.
-
-<p align="center">
-    <kbd> <img width="500" alt="income spending cluster" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/d85e981b-615f-4ace-a07b-ddcd32cb4457"></kbd> <br>
-    Gambar 6 — Plot Pendapatan dan Total Pengeluaran Berdasarkan Cluster
-</p>
-<br>
-
-Berdasarkan plot korelasi antara pendapatan (Income) dan total pengeluaran (Total Spending), terlihat bahwa terdapat pembentukan cluster atau kelompok yang dapat dibedakan. Dalam hal ini, **cluster 0 dan 3 cenderung berada dalam satu kelompok yang menunjukkan adanya persamaan dan perbedaan karakteristik di antara kedua cluster tersebut**. Ketika dua cluster berada dalam satu kelompok, hal ini mengindikasikan bahwa terdapat kemiripan atau keterkaitan dalam pola pendapatan dan pengeluaran di antara anggota-anggota cluster tersebut. Secara visual, terlihat bahwa **kedua cluster tersebut mungkin memiliki tingkat pendapatan dan pengeluaran yang relatif mirip atau memiliki tren yang serupa**.
-
-<p align="center">
-    <kbd> <img width="1000" alt="meancluster" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/2d66d306-a36d-46d2-a9f4-1f09f93abc1f"></kbd> <br>
-    Gambar 6 — Plot Karakteristik Mayoritas/Rata-rata Total Transaksi, Pengeluaran, Pendapatan, Recency, dan Conversion Rate Berdasarkan Cluster
-</p>
-<br>
-
-Berdasarkan hasil analisis yang lebih mendalam dapat diketahui karakteristik rata-rata/mayoritas dari setiap cluster berdasarkan pola transaksi pelanggan dan dapat dikelompokkan berdasarkan beberapa kategori.
-- **Cluster 0**
-    - Angka transaksi dan spending tertinggi yaitu mayoritas 25 transaksi dan Rp.1.116.000/bulan
-    - Pendapatan cukup tinggi, mayoritas Rp.65.215.000/tahun
-    - Conversion rate sedang, yaitu 4%
-    - Kategori : **"*High-Transaction High-Spending Group*" - High Customer A** <br>
-<br>
-
-- **Cluster 1**
-    - Angka transaksi dan spending terendah yaitu mayoritas hanya 7 transaksi dan Rp.58.000/bulan
-    - Pendapatan terendah, mayoritas Rp.33.297.500/tahun
-    - Conversion terendah, yaitu 1%
-    - Kategori : **"*Low-Transaction Low-Spending Group*" - Low Customer** <br>
-<br>
-    
-- **Cluster 2**
-    - Angka transaksi dan spending cukup tinggi yaitu mayoritas 20 transaksi dan Rp.1.040.000/bulan
-    - Pendapatan tertinggi, mayoritas Rp.71.488.000/tahun
-    - Conversion rate tertinggi, yaitu 8%
-    - Kategori : **"*High-Income High-Conversion Group*" - High Customer B** <br>
-<br>
-
-- **Cluster 3**
-    - Angka transaksi dan spending sedang yaitu mayoritas 17 transaksi dan Rp.434.000/bulan
-    - Pendapatan cukup sedang, mayoritas Rp.52.597.000/tahun
-    - Conversion rate cukup sedang, yaitu 3%
-    - Kategori : **"*Moderate-Transaction Moderate-Spending Group*" - Moderate Customer**<br>
-<br>
-
-Analisis distribusi beberapa fitur masing-masing cluster dilakukan juga dilakukan untuk mendapatkan wawasan yang lebih dalam. Melalui analisis ini, ditemukan beberapa insight menarik yang dapat memberikan pemahaman yang lebih baik tentang perilaku pengguna dalam setiap cluster, khususnya terkait kunjungan website dan respon terhadap campaign.
-
-<p align="center">
-    <kbd> <img width="1000" alt="distri clus" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/05707677-9a7e-47c2-b071-6f2d2c72c718"></kbd> <br>
-    Gambar 7 — Plot Distribusi Berdasarkan Cluster
-</p>
-<br>
-
-Berikut temuan yang menarik:
-- **Low Customer (Cluster 1)** yang memiliki distribusi jumlah kunjungan website yang tinggi, namun memiliki total acceptance campaign yang rendah. Ini menunjukkan bahwa kelompok ini sangat **sering mengunjungi website perusahaan, tetapi tidak sepenuhnya menyadari atau tidak responsif terhadap campaign yang ditawarkan**. Mengingat kelompok ini memiliki populasi yang paling banyak, perusahaan perlu mengembangkan strategi yang tepat untuk menarik perhatian dan meningkatkan keterlibatan mereka. 
-- Cluster yang **paling banyak merespon campaign adalah High Customer A (Cluster 0)** dengan tingkat konversi yang sedang. Ini menunjukkan bahwa mayoritas pelanggan dalam kelompok ini sangat responsif terhadap campaign yang ditawarkan oleh perusahaan. Hal ini dapat menjadi kesempatan yang baik untuk meningkatkan interaksi dan pembelian dari kelompok ini dengan meluncurkan campaign yang lebih menarik dan relevan sesuai dengan preferensi mereka.
-- **High Customer B (Cluster 2)**, mayoritas pelanggannya tidak terlalu sering mengunjungi website perusahaan, namun memiliki distribusi konversi rate yang lebih tinggi dengan respon campaign yang sedang. Fenomena ini menunjukkan bahwa kelompok ini **memiliki kecenderungan pengeluaran yang tinggi dan cenderung merespons positif terhadap campaign yang ditawarkan, meskipun mereka tidak begitu aktif dalam kunjungan ke website**. Perusahaan dapat memanfaatkan informasi ini dengan mengoptimalkan saluran komunikasi lain seperti email, media sosial, atau platform online lainnya untuk efektif menjangkau kelompok ini.
-
-<br>
-<p align="center">
-    <kbd> <img width="600" alt="percentage" src="https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/assets/115857221/d7c0d96e-3d15-4d59-9ffc-b7afed8786a0"></kbd> <br>
-    Gambar 8 — Plot Presentase Populasi Cluster 
-</p>
-<br>
-
-Berdasarkan persentase populasi masing-masing cluster, ditemukan bahwa **50.22% dari keseluruhan pelanggan termasuk dalam kelompok Low Customer (Cluster 1)**. Meskipun kelompok ini memiliki angka transaksi dan pengeluaran yang rendah, namun karena populasi mereka yang besar. Perusahaan dapat fokus untuk menarik perhatian mereka. Sedangkan populasi **High Customer A (Cluster 0) dan B (Cluster 2) cenderung rendah**, namun memiliki potensi transaksi dan spending yang tinggi. Perusahaan dapat mempertimbangkan strategi pemasaran yang lebih personal dan eksklusif untuk menarik minat mereka.
-
-<br>
-<br>
-
----
-
-## 📂 **STAGE 5: Business Recommendation**
-
-Berdasarkan analisis yang telah dilakukan, dapat diidentifikasi personalitas atau karakteristik pelanggan berdasarkan cluster yang terbentuk. Mengetahui karakteristik ini sangat berharga dalam merancang strategi pemasaran yang lebih efektif. Dengan memahami preferensi, kebutuhan, dan perilaku konsumen dalam setiap cluster, perusahaan dapat menghasilkan campaign yang lebih relevan dan menarik bagi setiap kelompok pelanggan.
-
-### High Customer A
-Summary:
-- Populasi 12.61%.
-- High-Transaction High-Spending Group.
-- Paling responsif terhadap campaign, dengan tingkat kunjungan website dan konversi ke pembelian sedang.
-
-Rekomendasi:
-- Mengingat kelompok High Customer A cenderung memiliki total transaksi dan total spending yang tinggi, perusahaan dapat memberikan **penawaran khusus dan insentif tambahan untuk mendorong pelanggan melakukan pembelian secara terus-menerus**. Perusahaan dapat menerapkan program diskon eksklusif, hadiah loyalitas, atau akses ke produk atau layanan khusus untuk kelompok ini.
-- Perusahaan dapat meningkatkan **kualitas pengalaman pengguna dalam berselancar di website, mengingat tingkat kunjungan website yang sedang**. Perusahaan dapat memastikan tampilan yang menarik, customer journey yang efisien, dan lain sebagainya.
-- Mengingat kelompok High Customer A sangat responsif terhadap campaign, memanfaatkan kepuasan mereka dengan memperkenalkan **program referral** dapat menjadi strategi yang efektif. Memberikan insentif kepada pelanggan untuk merekomendasikan produk atau layanan perusahaan kepada teman dan keluarga dapat membantu dalam memperluas jangkauan dan memperoleh pelanggan baru.
-- Perusaan dapat **mingirimkan pesan yang dipersonalisasikan** seperti info promo atau diskon **berdasarkan preferensi** kelompok ini. Hal ini dilakukan untuk menjaga loyalitas pelanggan. <br>
-<br>
+- Elbow Method : 6 / Silhoutette Score: 4
+- 두 지표를 함께 고려하여, 클러스터 개수  4 선택 ⇒ 클러스터 4개로 분류했을때, 실루엣 계수는 0.442로 가장 높으며, 개별 군집의 평균 실루엣 계수 값이 비교적 균일하다.
 
 
-### High Customer B
-Summary :
-- Populasi 13.42%.
-- High-Income High-Conversion Group.
-- Sama seperti High Customer B dalam segi income dan total spending, namun memiliki income paling tinggi.
-- Tingkat konversi paling tinggi, respon terhadap campaign relatif sedang, kurang mengunjungi website secara aktif. 
-
-Rekomendasi:
-- Sama halnya dengan High Customer A, perusahaan dapat **memberikan penawaran khusus** seperti diskon, program loyalti, dan sebagainya agar pelanggan selalu tertarik untuk berbelanja terus menerus.
-- Mengingat kelompok ini kurang aktif dalam kunjungan website, perusahaan dapat memanfaatkan **saluran komunikasi alternatif untuk campaign** seperti email, pesan teks, atau media sosial. Hal ini dapat membantu meningkatkan interaksi dan kesadaran pelanggan.
-- Untuk meningkatkan respon pelanggan terhadap campaign, perusahaan dapat **memberikan campaign-campaign yang tertarget sesuai dengan preverensi dan kebutuhan pelanggan**.
-- Mengingat pelanggan dalam kelompok High Customer B memiliki tingkat konversi yang tinggi, perusahaan dapat mempertimbangkan untuk meluncurkan **program loyalitas** yang memberikan insentif tambahan, penghargaan khusus, atau akses ke acara atau produk eksklusif dapat memperkuat loyalitas pelanggan. <br>
-<br>
+#### 클러스터별 특성  
+![다운로드](https://github.com/JungSooYeon823/portfolio/assets/121957252/b7cedecb-8899-4ef2-a087-a993e07ccda4)
 
 
-### Moderate Customer
-Summmary:
-- Populasi 23.75%.
-- Moderate-Transaction Moderate-Spending Group
-- Tingkat konversi, kunjungan website dan respon terhadap campaign relatif sedang.
+#### 클러스터별 활용 방안
 
-Rekomendasi:
-- Perusahaan dapat memberikan **penawaran khusus** dan diskon untuk mendorong pembelian lebih lanjut. Hal ini dapat memberikan insentif tambahan kepada pelanggan dalam kelompok ini untuk memilih produk atau layanan perusahaan dibandingkan dengan pesaing.
-- Perusahaan dapat **mengirim pesan yang relevan dan menarik** kepada pelanggan untuk melakukan transaksi.
-- **Memastikan pengalaman pengguna yang baik saat mengunjungi website** atau berinteraksi dengan produk atau layanan perusahaan.
-- Membangun **program hadiah atau loyalitas** dapat membantu memperkuat keterikatan pelanggan. Seperti dengan memberikan poin, penghargaan, atau manfaat khusus kepada pelanggan setia, perusahaan dapat mendorong mereka untuk terus memilih dan membeli produk atau layanan perusahaan. <br>
-<br>
+- #### Cluster 0 
+	- 고객 세그먼트 특성
+  		- 월별 지출 변동이 낮은편으로, 꾸준한 구매 패턴이 있지만 , 주문 빈도와 구매액은 가장 낮다.
+    		- 홈 인테리어 소품 관련 상품을 선호한다.
+   		- 낮12~ 14시에 집중적으로 구매하는 패턴이 있다.
+   		- At-Risk(이탈 위험 고객) 43.4% , Cannot lose them(놓칠수 없는 고객) 23.3% 비중
+  	- 고객 세그먼트 활용 전략
+  		- At-Risk (이탈 위험 고객)
+  			- 리워드 및 할인 제공: 추가 리워드나 할인을 제공하여 이탈 방지
+  			- 설문조사 및 피드백 요청: 고객의 불만,이탈 원인을 파악하기 위해 설문조사요청  ⇒ 서비스나 상품 개선 시행.
+		- Cannot lose Them(잃을수 없는 고객)
+  			- 개인화된 혜택 제공: 할인, 멤버십 혜택, 또는 독점적인 프로모션을 통해 이탈 방지
+  			- 특별한 이벤트 및 선점 기회 제공:특별한 이벤트나 선점 기회를 제공하여 구매 유도
+  			- 낮 12~14시에 특별한 프로모션 제공
+  	- 장바구니 분석 +추천시스템 활용 전략
+  		- 홈 인테리어 관련 상품에 대한 개인화된 추천 서비스 제공.
+  		- 이탈 위험이 있는 사용자에게는 이전에 관심을 보였던 상품, 카테고리를 중심으로 개인화된 상품 추천
+
+- #### Cluster 1
+	- 고객 세그먼트 특성
+ 		- 주문당 수량 및 주문당 구매액이 비교적 높은 그룹으로, 대량 구매를 선호하는 구매 패턴
+   		- 이벤트나 파티에 사용되는 상품을 선호한다.
+     		- Promising (유망한 고객) 38.6% ,About to sleep(잠들기 직전 고객 ) 31.4% 비중
+       - 고객 세그먼트 활용 전략
+       		- Promising(유망한 고객)
+         		- 추가 혜택 및 프로모션 제공: 추가 혜택이나 독점적인 프로모션을 제공하여 더 많은 구매를 유도
+           		- 추가 서비스 및 제품 소개:신규 서비스나 제품을 소개하여 구매 유도
+             	-  About To Sleep (곧 잠들 예정의 고객 )
+              		- 개인화된 알림 및 특별 제안 제공: 개인화된 알림이나 특별 제안을 통해 다시 관심을 유도
+                	- 재구매 유도 프로그램 도입: 재구매를 유도하는 CRM 메세지 전송 및 리텐션 마케팅 진행
+                 	- 포인트 및 할인 유도 :추가 포인트나 할인을 제공하여 구매 유도
+	- 장바구니 분석 +추천시스템 활용 전략
+ 		- 추가 구매를 유도하는 번들 상품 제안:장바구니에 담긴 상품 간의 연관성을 고려하여,번들 상품을 제안
+   		- 개인화된 추천 시스템 : 이벤트 상품을 구매하는 경향으로 관련 상품 추천
+ 
+
+- #### Cluster 2
+	- 고객 세그먼트 특성
+ 		- 월별 지출 변동이 큰 편으로, 10~12월 겨울 시즌에 구매가 활발한 패턴을 보인다. 
+   		- 주문당 수량 및 주문당 구매액이 비교적 낮은 것으로, 소량 구매를 선호하는 구매 패턴
+     		- 크리스마스 관련 상품 및 런치백 등의 잡화류 상품을 선호한다.
+       		- Loyal customer(충성 고객) 37.3%,New customer(신규 고객) 35.2% 비중 
+       - 고객 세그먼트 활용 전략
+       		- Loyal Customer (충성 고객)
+         		- 추가 혜택 및 리워드 프로그램: 충성도를 인정하고 보상하는 리워드 프로그램을 제공하여 계속해서 구매 유도.
+           		- 개별적인 감사 메세지: 고객에게 개별적으로 감사의 뜻을 전하는 메시지 전송
+             	-  New Customers (신규 고객)
+              		- 환영 혜택 및 할인 제공:초기 구매에 대한 환영 혜택이나 할인을 제공하여, 브랜드에 대한 긍정적인 경험을 제공
+                	- 계절 별 프로모션 및 할인:겨울 시즌에 특화된 할인 프로그램 도입하여 계절에 따른 구매를 유도. 
+	- 장바구니 분석 +추천시스템 활용 전략
+ 		- 시즌별 상품 추천 :선호도 분석을 통해 겨울 시즌에 가장 선호하는 상품 식별 및 계절 상품 추천 
+   		
+
+- #### Cluster 3
+	- 고객 세그먼트 특성
+ 		- 주문 건수와 총 구매액이 가장 높은 그룹
+   		- 다른 클러스터 대비 비교적 다양한 상품에서 선호도가 나타남
+     		- VIP 66.7%,Potential Loyalists(유망한 충성 고객) 24.9%
+       - 고객 세그먼트 활용 전략
+       		- VIP 고객
+         		- VIP 멤버십 프로그램 운영: VIP와 Potential Loyalists 그룹에 대한 멤버십 프로그램 도입.
+           		- 선점적인 새로운 상품 소개:새로운 상품이나 서비스를 먼저 체험할 수 있는 기회를 제공하여 로얄티 증대
+             		- 우선 배송 및 서비스 제공:빠른 배송 서비스나 24시간 고객 서비스 등을 우선적으로 제공
+             	-  Potential Loyalists (잠재적 충성고객)
+              		- 추가 혜택 및 가치 제시:높은 구매 빈도와 금액에 대한 추가 혜택을 제시하여, 실제 충성고객으로 성장하도록 유도
+                	- 추가 서비스 및 소식 제공 : 최신 상품이나 이벤트에 대한 정보를 제공하여, 고객의 참여를 유도 
+	- 장바구니 분석 +추천시스템 활용 전략
+ 		- 최근 구매 이력 기반 추천:VIP 및 Loyal Customer의 최근 구매 이력을 기반으로 ,유사한 상품 추천
+   		- 고가 상품 및 프리미엄 아이템 추천:높은 구매 빈도와 금액을 갖는 이 세그먼트에게는 고가 상품이나,프리미엄 아이템을 중심 추천
 
 
-### Low Customer
-Summary:
-- Populasi 50.22%, pelanggan didominasi oleh kategori ini.
-- Low-Transaction Low-Spending Group.
-- Tingkat konversi paling rendah, cenderung tidak merespon campaign, namun kategori ini paling sering mengunjungi website.
 
-Rekomendasi:
-- Mengingat kelompok Low Customer sering mengunjungi website, perusahaan dapat **memanfaatkan informasi kunjungan website untuk menyajikan konten yang personalisasi dan penawaran khusus yang sesuai dengan minat dan preferensi mereka**.
-- Perusahaan dapat **melakukan retargeting campaign** dengan mengingatkan pelanggan dalam kelompok ini tentang produk atau layanan yang mereka telah kunjungi di website. Dengan menampilkan iklan yang disesuaikan di berbagai platform digital yang mereka gunakan, perusahaan dapat membangun kesadaran dan mendorong mereka untuk melanjutkan proses pembelian.
-- Mengingat kelompok Low Customer memiliki tingkat konversi yang rendah dan cenderung tidak merespon campaign dengan baik, perusahaan dapat **menggunakan strategi konten yang lebih fokus pada edukasi dan informasi (softselling)**. Memberikan konten yang memberikan nilai tambah, memberikan solusi untuk masalah atau kebutuhan pelanggan, dan membantu mereka membuat keputusan yang lebih informatif dapat meningkatkan keterlibatan dan kepercayaan pelanggan dalam kelompok ini.
+
+## 📂 **STAGE 5: 장바구니 분석**
+
+![khk](https://github.com/JungSooYeon823/portfolio/assets/121957252/aca7f04c-caec-458a-9130-8a19a0a56cf5)
+
+- 지지도  0.2이상,신뢰도 0.7이상 연관규칙 5가지 도출
+
+⇒ 두 제품 간의 연관성이 높으므로, 이를 함께 마케팅하거나 특별한 할인 혜택을 제공할 수 있다. 
+⇒ 이를 함께 판매하는등의 상품 번들구성을 기획할 수 있다.   
+
+## 📂 **STAGE 6: 추천시스템**
+
+![20240117_145046](https://github.com/JungSooYeon823/portfolio/assets/121957252/a42424ac-47c3-4f42-8547-f9a12c8edcac)
+
+- 클러스터 기반 추천 시스템
+	- 사용자를 클러스터로 그룹화하여 취향 파악 ⇒ 각 클러스터에 대한 추천 제공
+ 	- 이미 구매한 상품을 제외하고, 클러스터와 고객 기반으로 n개의 상품을 추천 
+
