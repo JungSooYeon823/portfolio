@@ -40,8 +40,7 @@
 ### 📂 Data visualization
 Project Link | Associated | Tools | Project Description
 ---|---|---|---
-[Human Resource Attrition Analysis](https://www.canva.com/design/DAFpzCA0Ewk/DIvoXzodwMmqbPaNb1jIvQ/view?utm_content=DAFpzCA0Ewk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) (EDA, data analysis) | Challenge Task - IYKRA | Tableau | Joined tables within the dataset to conduct an analysis focused on identifying the demographic traits of employees who are more likely to leave the company, as well as an exploration of the factors that influence employee attrition.
-[Targeted Customer Demographic Dashboard](https://public.tableau.com/views/TargetedCustomersDemographicDashboard-KPMGVIX/TargetedCustomerDemographic?:language=en-US&:display_count=n&:origin=viz_share_link) | VIX - KPMG Australia: Data Analytic Consulting | Tableau | This dashboard provides insights into the demographics of new customers to be targeted in marketing efforts after conducting prior customer segmentation analysis.
+f| (EDA, data analysis) | j | Tableau | 
 <br>
 <br>
 
