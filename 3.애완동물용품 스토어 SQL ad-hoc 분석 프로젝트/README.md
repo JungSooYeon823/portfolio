@@ -10,8 +10,8 @@
 <br>
 
 **Table of Contents**
-- [STAGE 0:프로젝트 개요](https://github.com/JungSooYeon823/portfolio/edit/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#-stage-0-프로젝트-개요)
-	- [기획 의도](https://github.com/JungSooYeon823/portfolio/edit/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#기획-의도)
+- [STAGE 0:프로젝트 개요](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#-stage-0-프로젝트-개요)
+	- [기획 의도](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md#기획-의도)
 	- [문제 정의](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#goal)
 	- [분석 목표](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#objective)
 - [STAGE 1: 결과](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/README.md#-stage-1-data-preparation)
