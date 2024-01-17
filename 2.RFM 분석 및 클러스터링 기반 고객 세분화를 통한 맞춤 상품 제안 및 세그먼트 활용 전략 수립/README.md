@@ -1,10 +1,10 @@
-# 🙂 Predict Customer Personality to Boost Marketing Campaign
+# RFM 분석 및 클러스터링 기반 고객 세분화를 통한 맞춤 상품 제안 및 세그먼트 활용 전략 수립
 <br>
 
 **Tool** : Jupyter Notebook | [Link Notebook](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign/blob/main/Predict%20Customer%20Personality.ipynb)<br>
 **Programming Language** : Python <br>
 **Libraries** : Pandas, NumPy, sklearn <br>
-**Visualization** : Matplotlib, Seaborn, yellow-brick <br>
+**Visualization** : Matplotlib, Seaborn <br>
 **Source Dataset** : Rakamin Academy <br>
 <br>
 <br>
