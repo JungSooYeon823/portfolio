@@ -1,12 +1,11 @@
-# Faiz's Project Portfolio
-Hi there! This documentation is like a quick snapshot of my project in the data field, showing off my skills and know-how in this area.
+# 정수연 | JUNG SOO YEON  < PROJECT Portfolio >
 
 **Table of Contens :**
 - [Data Engineering](https://github.com/faizns/Faizs-Data-Portofolio#-data-ngineering)
-- [Python: Data Analysis and Machine Learning](https://github.com/faizns/Faizs-Data-Portofolio#-python:-data-analysis-and-machine-learning)
+- [Python: 데이터분석 , 머신러닝](https://github.com/faizns/Faizs-Data-Portofolio#-python:-data-analysis-and-machine-learning)
 - [SQL](https://github.com/faizns/Faizs-Data-Portofolio#-sqlg)
-- [Dashboard](https://github.com/faizns/Faizs-Data-Portofolio#-dashboard)
-- [Complated Course and Certification](https://github.com/faizns/Faizs-Data-Portofolio#-complated-course-and-certification)
+- [Data visualization](https://github.com/faizns/Faizs-Data-Portofolio#-dashboard)
+- [Course Certification](https://github.com/faizns/Faizs-Data-Portofolio#-complated-course-and-certification)
 
 
 <br>
@@ -21,52 +20,45 @@ Project Link | Associated | Tools | Project Description
 <br>
 
 
-### 📂 Python: Data Analysis and Machine Learning
+### 📂 Python: 데이터분석 , 머신러닝 
 
-Project Link | Associated | Area | Library | Project Description 
----|---|---|---|---
-💰 [Predict Loan Default Customers](https://github.com/faizns/HCI-vix-project/blob/main/README.md)|VIX - Home Credit Indonesia: Data Scientist| Data Wraggling, EDA, Supervised Learning - **Classification** |pandas, matplotlib, seaborn, scikit-learn, scipy |Predicted customer defaults or customer would experience payment difficulties. Conducted data cleansing on raw data and analyzed over 100 features using statistical methods for feature selection. The best model achieved an accuracy of 87% and an AUC of 73% using Logistic Regression. Created a simulation by deploying a web application for loan approval prediction using Streamlit.
-☎️ [Telco Customer Churn](https://github.com/faizns/Telco-Customers-Churn)|FGA x Binar Academy: Data Science [*Team*]|Data Wraggling, EDA, Supervised Learning - **Classification**| pandas, matplotlib, seaborn, scikit-learn, shap | Developed a machine learning model to predict customer churn in a telecom company. The Random Forest model yielded the highest accuracy score, reaching 89%, with the most influential feature being the total day charge. A higher charge indicates a higher potential for customer churn.
-📲 [Predict Clicked Ads Customer Classification](https://github.com/faizns/Predict-Clicked-Ads-Customer-Classification/blob/main/README.md)|Mini Project by Rakamin Academy| Data Wraggling, EDA, Supervised Learning - **Classification**|pandas, matplotlib, seaborn, scikit-learn, shap, etc| Developed a machine learning model and experimented with various algorithms, ultimately determining that the Random Forest model achieved the best fit with accuracy of 96% in identifying potential users likely to click on advertisements. Analyzed key influential features with SHAP to enhance targeting for improved conversion rates and cost efficiency.
-🙂 [Predict Customer Personality to Boost Marketing Campaign](https://github.com/faizns/Predict-Customer-Personality-to-Boost-Marketing-Campaign)| Mini Project by Rakamin Academy |Data Wraggling, EDA, Unsupervised Learning - **Clustering** |pandas, matplotlib, seaborn, scikit-learn, yellowbrick | Analyzed customer characteristics of a e-grocery store by creating a clustering model using K-means. Before to clustering, decomposition was performed, and the best cluster was determined using inertia score or distortion score. This resulted in 4 clusters based on customer behavior, considering factors such as the number of transactions, spending levels, response to campaigns, and website visit frequency.
-🏬 [Investigate Hotel Business using Data Visualization](https://github.com/faizns/Investigate-Hotel-Business-using-Data-Visualization)| Mini Project by Rakamin Academy | Data Wraggling, EDA, **Data Visualization** | pandas, matplotlib, seaborn | Analyzed the performance of City Hotels and Resort Hotels, identifying the frequently visited hotel type and exploring the relationships between booking cancellations, length of stay, and lead time through Python visualization. Identified potential causes for these patterns and provided business recommendations based on the analysis.
-🚲 [Data Quality Assessment and Customer Segmentation](https://github.com/faizns/VIX-Data-Analytics-KPMG-AU) |VIX - KPMG Australia: Data Analytic Consulting | Data Wraggling, EDA, RFM analysis |pandas, matplotlib, seaborn | Developed and optimized a bike company market strategy by analyzing their data. Conducted a data quality assessment and identified strategies to mitigate any data quality issues. Performed customer segmentation using a simple RFM (Recency, Frequency, Monetary) analysis to recommend potential new customers for targeted marketing. Visualized insights about the targeted customer demographics on a dashboard.
-🛒 [Online Shoppers Purchasing Intention](https://github.com/faizns/Online-Shoppers-Purchasing-Intention)|Final Project -Rakamin Academy [*Team*]| Data Wraggling, EDA, Supervised Learning - **Classification** | pandas, matplotlib, seaborn, scikit-learn, shap |Built a model to predict which website visitors are likely to make a purchase or not. After testing several algorithms, Random Forest Hyperparameter Tuning demonstrated the best performance, achieving a ROC-AUC score of 90%. Through simulation, it was projected that this model could potentially increase the conversion rate by 58%.
-✈️ [Airline Customer Segmentation Based on LRFMC Model Using K-Means](https://github.com/faizns/Airline-Customer-Segmentation-Based-on-LRFMC-Model-Using-KMeans) |Assignment - Rakamin Academy [*Team*] |Data Wraggling, EDA, Unsupervised Learning - **Clustering**|pandas, matplotlib, seaborn, scikit-learn, yellowbrick | Developed a clustering model employing LRFMC scores and the K-Means algorithm, resulting in the identification of 5 customer clusters: New Users, 20% are Loyal Customers, 19% are Potential Loyalists/The Champion, 18% are Need Attention, and 16% are Hibernating. 
+프로젝트 링크 | 역할 | 라이브러리 | 프로젝트 개요 |  
+---|---|---|---|
+[이탈 예측 모델링을 통한 고객 이탈 최소화 및 내부 고객 관리 강화](https://github.com/JungSooYeon823/portfolio/blob/main/1.%EC%9D%B4%ED%83%88%20%EC%98%88%EC%B8%A1%20%EB%AA%A8%EB%8D%B8%EB%A7%81%EC%9D%84%20%ED%86%B5%ED%95%9C%20%EA%B3%A0%EA%B0%9D%20%EC%9D%B4%ED%83%88%20%EC%B5%9C%EC%86%8C%ED%99%94%20%EB%B0%8F%20%EB%82%B4%EB%B6%80%20%EA%B3%A0%EA%B0%9D%20%EA%B4%80%EB%A6%AC%20%EA%B0%95%ED%99%94/README.md)|데이터 전처리, EDA, 머신러닝-지도학습 - **분류**| pandas, matplotlib, seaborn, scikit-learn | 고객 이탈 예측 모델 개발 역량,이탈에 영향을 주는 특성 중요도 분석, CRM 팀/Product팀 별 내부 고객 관리 강화 및 이탈 위험 고객 관리 액션 플랜 도출 
+[RFM 분석 및 클러스터링 기반 고객 세분화를 통한 맞춤 상품 제안 및 세그먼트 활용 전략 수립](https://github.com/JungSooYeon823/portfolio/blob/main/2.RFM%20%EB%B6%84%EC%84%9D%20%EB%B0%8F%20%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81%20%EA%B8%B0%EB%B0%98%20%EA%B3%A0%EA%B0%9D%20%EC%84%B8%EB%B6%84%ED%99%94%EB%A5%BC%20%ED%86%B5%ED%95%9C%C2%A0%EB%A7%9E%EC%B6%A4%20%EC%83%81%ED%92%88%20%EC%A0%9C%EC%95%88%20%EB%B0%8F%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%ED%99%9C%EC%9A%A9%20%EC%A0%84%EB%9E%B5%20%EC%88%98%EB%A6%BD/README.md)|데이터 전처리, EDA, 머신러닝-비지도학습 - **클러스터링**|pandas, matplotlib, seaborn, scikit-learn| RFM 분석,K-means 클러스터링,장바구니 분석,추천 시스템 개발,세그먼트 별 활용 전략 도출 
 
 <br>
 <br>
 
 ### 📂 SQL
 
-Project Link | Associated | Area | Tools | Project Description
----|---|---|---|---
-💳 [Credit Card Customer Churn Analysis](https://github.com/faizns/vix-btpn)|VIX - BTPN Syariah: Data Engineer |Data analysis|PosgreeSQL, DBeaver, Tableau for Visualization|Created tables, loaded data in the database, and designed a star schema. Subsequently, conducted data exploration to identify customer profiles and characteristics related to churn. This analysis allowed for an examination of customer behavior based on demographic information, their relationship with the bank, and transaction history.
-🛍 [Maven Fuzzy Factory](https://github.com/faizns/Udemy-Advanced-MySQL-Data-Analysis)| Advanced SQL: MySQL Data Analysis and Business Intelligence|Data analysis| MySQL, MySQL Workbench |It is a course-based project aimed at analyzing the performance of an e-commerce business, answering various business questions using SQL, covering topics such as traffic, website measurement, product analysis, and user-level analysis. [*Documentation is currently in progress.*]
-📦 [Analyzing eCommerce Business Performance](https://github.com/faizns/Analyzing-eCommerce-Business-Performance-with-SQL) |Mini Project by Rakamin Academy| Data analysis | PosgreeSQL, pgAdmin, Excel for Visualization |Evaluated the business performance of e-commerce in Brazil by analyzing the growth in annual customer activity, annual product category quality, and annual payment type usage. The analysis utilized datasets containing information about customers, sellers, products, and orders.
+프로젝트 링크 |라이브러리 | 프로젝트 개요 
+---|---|---|
+[애완동물용품 스토어 SQL ad-hoc 분석 프로젝트](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md)| SQLlite3,pandas | 애완동물용품 스토어 판매 데이터를 바탕으로,실제 현업에서 활용할 수 있는 ad-hoc 분석 시뮬레이션 진행,프로덕트 팀/마케팅 팀/비즈니스 팀별 요청사항 대응 및 인사이트 도출 
+
 <br>
 <br>
 
-### 📂 Dashboard
+노트 링크 | 소스 | 설명 
+---|---|---|
+[SQL 문제풀이 노트](https://velog.io/@sooyeon_/posts?tag=SQL%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4%EB%85%B8%ED%8A%B8)|HackerRank,Leetcode |HackerRank SQL 모든 문제 solved / Leetcode Database 82 문제 solved
+
+<br>
+<br>
+
+### 📂 Data visualization
 Project Link | Associated | Tools | Project Description
 ---|---|---|---
-👩🏻‍💻 [Human Resource Attrition Analysis](https://www.canva.com/design/DAFpzCA0Ewk/DIvoXzodwMmqbPaNb1jIvQ/view?utm_content=DAFpzCA0Ewk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) (EDA, data analysis) | Challenge Task - IYKRA | Tableau | Joined tables within the dataset to conduct an analysis focused on identifying the demographic traits of employees who are more likely to leave the company, as well as an exploration of the factors that influence employee attrition.
-🚕 [Green Taxy Trip Monthly Report](https://lookerstudio.google.com/reporting/3ae0a20d-07d7-4395-b373-2780d61d3c8e) |Challenge Task - IYKRA|Looker Studio| Created a monthly performance report for taxi services. The report provided information about revenue generated from taxi trips and analyzed the busiest zones, days, and hours for passenger activity.
-💊 [Sales Report Dashboard](https://lookerstudio.google.com/reporting/3c67b292-3be2-484d-bc29-27bd0b4015fd) | VIX - PT. Kimia Farma, Tbk: Big Data Analyst | Looker Studio|Created a data mart, analyzed the provided data, and generated sales reports for the company. Additionally, developed a dashboard that primarily focuses on sales data from a six-month period, including key performance indicatorssuch as total revenue per month, total sales per branch location, total sales by product, and more.
-💉[Indonesia Covid-19 Dashboard](https://github.com/faizns/Analyzing-eCommerce-Business-Performance-with-SQL) |Challenge by Binar Academy [*Team*]|Looker Studio, BingQuery | Presented information about the update of COVID cases in Indonesia, such as new active cases, new confirmed cases, new deaths, and recoveries.
-👩🏻‍💻[Targeted Customer Demographic Dashboard](https://public.tableau.com/views/TargetedCustomersDemographicDashboard-KPMGVIX/TargetedCustomerDemographic?:language=en-US&:display_count=n&:origin=viz_share_link) | VIX - KPMG Australia: Data Analytic Consulting | Tableau | This dashboard provides insights into the demographics of new customers to be targeted in marketing efforts after conducting prior customer segmentation analysis.
+[Human Resource Attrition Analysis](https://www.canva.com/design/DAFpzCA0Ewk/DIvoXzodwMmqbPaNb1jIvQ/view?utm_content=DAFpzCA0Ewk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) (EDA, data analysis) | Challenge Task - IYKRA | Tableau | Joined tables within the dataset to conduct an analysis focused on identifying the demographic traits of employees who are more likely to leave the company, as well as an exploration of the factors that influence employee attrition.
+[Targeted Customer Demographic Dashboard](https://public.tableau.com/views/TargetedCustomersDemographicDashboard-KPMGVIX/TargetedCustomerDemographic?:language=en-US&:display_count=n&:origin=viz_share_link) | VIX - KPMG Australia: Data Analytic Consulting | Tableau | This dashboard provides insights into the demographics of new customers to be targeted in marketing efforts after conducting prior customer segmentation analysis.
 <br>
 <br>
 
-### 📂 Complated Course and Certification
+### 📂 Course Certification
 
 - [Advanced SQL: MySQL Data Analysis and Business Intelligent](https://ude.my/UC-6a752a95-d22b-4710-bd1a-e227056ad481) | Udemy: Maven Analytics
 - [Advanced NLP with spaCy](https://www.datacamp.com/statement-of-accomplishment/course/21cbd0b3646b8cc477fff5630e8d20e6593ac9e8) | DataCamp
 - [Natural Language Processing with spaCy](https://www.datacamp.com/statement-of-accomplishment/course/05bad291fd71acbd1fa49fa7e319ce1c66440f99) | DataCamp
 - [Introduction to Natural Language Processing in Python](https://www.datacamp.com/statement-of-accomplishment/course/c6332b638b5fa9af2f61c6ef96a34ece9afbf278) | DataCamp
 - [Data Science](https://drive.google.com/file/d/15jI41wG9-IJpw9wQnerdvYVDb6MDlL6D/view?usp=sharing) | Binar x Kominfo RI: Digital Talent Scolarship
-- [Business Intelligence](https://drive.google.com/file/d/1oxUPN37HsEwsJxdcCCr-4itis7jzVWGx/view?usp=sharing) | Rakamin Academy 
-- [Data Science: Machine Learning Specialization](https://drive.google.com/file/d/1jp_QES7kNes42cqCmWYQTG0_2SbBm2EX/view?usp=sharing) | Rakamin Academy 
-- [Big Data Using Python](https://drive.google.com/file/d/1ZWTRXlOxr5-RYfjYSqnX7xXJOoXT8lVu/view) | CISCO x Kominfo RI: Digital Talent Scolarship  
-- [Data Science Math Skill](https://www.coursera.org/account/accomplishments/verify/V7HHC225KFUZ) | Coursera: Duke University 
-- [Python Lanjutan](https://badgr.com/public/assertions/MYpDoTshS82SMDNBbcYvqw?identity__email=naidasalimah@gmail.com) | Skilvul 
+
