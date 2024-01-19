@@ -44,7 +44,7 @@ Project Link | Tools |Description |
 <br>
 <br>
 
-### 📂 Course Certification
+### 📂 Course Completed
 
 - 데이터 사이언스 스쿨 | 제로베이스 
 - 백문이불여일타_데이터 분석을 위한 기초-고급 SQL | 인프
