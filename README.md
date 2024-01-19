@@ -40,7 +40,7 @@
 ### 📂 Data visualization
 Project Link | Tools |Description |
 ---|---|---|
-[KPI Dashboard](https://public.tableau.com/views/KPIDashboard_17056452497840/KPIdashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link) | Tableau | 비즈니스 주요 지표 점검 및 상품 카테고리 별 특성,유저별 특성 분석⇒ 해당 내용이 한눈에 확인할 수 있는 KPI board 기획
+[KPI Dashboard](https://sooyeon-data-analysist.notion.site/SuperStore-KPI-Dashboard-138275359ff540218c58cb2370c2a5e7) | Tableau | 비즈니스 주요 지표 점검 및 상품 카테고리 별 특성,유저별 특성 분석⇒ 해당 내용이 한눈에 확인할 수 있는 KPI board 기획
 <br>
 <br>
 
