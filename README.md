@@ -38,9 +38,9 @@
 <br>
 
 ### 📂 Data visualization
-Project Link | Associated | Tools | Project Description
----|---|---|---
-f| (EDA, data analysis) | j | Tableau | 
+Project Link | Tools |Description |
+---|---|---|
+[KPI Dashboard](https://public.tableau.com/views/KPIDashboard_17056452497840/KPIdashboard?:language=ko-KR&:display_count=n&:origin=viz_share_link) | Tableau | 비즈니스 주요 지표 점검 및 상품 카테고리 별 특성,유저별 특성 분석⇒ 해당 내용이 한눈에 확인할 수 있는 KPI board 기획
 <br>
 <br>
 
@@ -48,6 +48,5 @@ f| (EDA, data analysis) | j | Tableau |
 
 - 데이터 사이언스 스쿨 | 제로베이스 
 - 백문이불여일타_데이터 분석을 위한 기초-고급 SQL | 인프
-- 모두를 위한 데이터 사이언스 | edwith
 - 데이터 시각화를 위한 태블로 | edwith
 
