@@ -1,0 +1,58 @@
+WITH events AS (
+  SELECT
+    event_date,
+    event_name,
+    user_pseudo_id
+  FROM
+    `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+  WHERE
+    event_date BETWEEN '20201201' AND '20201231' 
+    AND event_name IN ('first_visit', 'view_item', 'add_to_cart', 'begin_checkout', 'purchase')
+),
+aggregated AS (
+  SELECT
+    FORMAT_DATE('%Y-%m', PARSE_DATE('%Y%m%d', event_date)) AS month,
+    event_name,
+    COUNT(DISTINCT user_pseudo_id) AS user_cnt
+  FROM
+    events
+  GROUP BY
+    month, event_name
+),
+pivot_table AS (
+  SELECT
+    month,
+    MAX(IF(event_name = 'first_visit', user_cnt, 0)) AS first_visit_count,
+    MAX(IF(event_name = 'view_item', user_cnt, 0)) AS view_item_count,
+    MAX(IF(event_name = 'add_to_cart', user_cnt, 0)) AS add_to_cart_count,
+    MAX(IF(event_name = 'begin_checkout', user_cnt, 0)) AS begin_checkout_count,
+    MAX(IF(event_name = 'purchase', user_cnt, 0)) AS purchase_count
+  FROM
+    aggregated
+  GROUP BY
+    month
+),
+conversion_rates AS (
+  SELECT
+    month,
+    first_visit_count,
+    view_item_count,
+    add_to_cart_count,
+    begin_checkout_count,
+    purchase_count,
+    ROUND(IFNULL(view_item_count / NULLIF(first_visit_count, 0), 0), 2) AS home_to_view_item_conversion_rate,
+    ROUND(IFNULL(add_to_cart_count / NULLIF(view_item_count, 0), 0), 2) AS view_item_to_add_to_cart_conversion_rate,
+    ROUND(IFNULL(begin_checkout_count / NULLIF(add_to_cart_count, 0), 0), 2) AS add_to_cart_to_begin_checkout_conversion_rate,
+    ROUND(IFNULL(purchase_count / NULLIF(begin_checkout_count, 0), 0), 2) AS begin_checkout_to_purchase_conversion_rate
+  FROM
+    pivot_table
+)
+SELECT
+  *,
+  ROUND((home_to_view_item_conversion_rate + view_item_to_add_to_cart_conversion_rate + add_to_cart_to_begin_checkout_conversion_rate + begin_checkout_to_purchase_conversion_rate) / 4, 2) AS average_conversion_rate
+FROM
+  conversion_rates
+WHERE
+  month = '2020-12'
+ORDER BY
+  month;
