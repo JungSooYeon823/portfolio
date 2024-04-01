@@ -41,7 +41,7 @@
 ### 📂 Data visualization
 Project Link | Tools |Description |
 ---|---|---|
-[KPI Dashboard](5.Superstore KPI 대시보드/Superstore KPI 대시보드.pdf) | Tableau | 비즈니스 주요 지표 점검 및 상품 카테고리 별 특성,유저별 특성 분석⇒ 해당 내용이 한눈에 확인할 수 있는 KPI board 기획
+[KPI Dashboard](https://public.tableau.com/shared/3HJ45TGXG?:display_count=n&:origin=viz_share_link)| Tableau | 비즈니스 주요 지표 점검 및 상품 카테고리 별 특성,유저별 특성 분석⇒ 해당 내용이 한눈에 확인할 수 있는 KPI board 기획
 <br>
 <br>
 
