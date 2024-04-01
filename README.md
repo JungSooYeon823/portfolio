@@ -27,6 +27,7 @@
 ---|---|---|
 [애완동물용품 스토어 SQL ad-hoc 분석 프로젝트](https://github.com/JungSooYeon823/portfolio/blob/main/3.%EC%95%A0%EC%99%84%EB%8F%99%EB%AC%BC%EC%9A%A9%ED%92%88%20%EC%8A%A4%ED%86%A0%EC%96%B4%20SQL%20ad-hoc%20%EB%B6%84%EC%84%9D%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md)| SQLlite3,pandas | 애완동물용품 스토어 판매 데이터를 바탕으로,실제 현업에서 활용할 수 있는 ad-hoc 분석 시뮬레이션 진행,프로덕트 팀/마케팅 팀/비즈니스 팀별 요청사항 대응 및 인사이트 도출 
 [패스트 푸드 캠페인 A/B 테스트](https://github.com/JungSooYeon823/portfolio/blob/8761929945b15e66c92de96d3b5d957d30de38ee/4.%ED%8C%A8%EC%8A%A4%ED%8A%B8%20%ED%91%B8%EB%93%9C%20%EC%BA%A0%ED%8E%98%EC%9D%B8%20AB%ED%85%8C%EC%8A%A4%ED%8A%B8/%ED%8C%A8%EC%8A%A4%ED%8A%B8%20%ED%91%B8%EB%93%9C%20%EC%BA%A0%ED%8E%98%EC%9D%B8%20AB%20%ED%85%8C%EC%8A%A4%ED%8A%B8.pdf)| SQLlite3,pandas | 패스트 푸드 캠페인 A/B테스트를 통해, 최적의 캠페인 선정 
+[웹 로그 데이터를 활용한 퍼널 분석](https://github.com/JungSooYeon823/portfolio/blob/main/5.%EC%9B%B9%20%EB%A1%9C%EA%B7%B8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%ED%8D%BC%EB%84%90%20%EB%B6%84%EC%84%9D/%EC%9B%B9%20%EB%A1%9C%EA%B7%B8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%ED%8D%BC%EB%84%90%20%EB%B6%84%EC%84%9D.pdf)|SQL,pandas|웹 로그 데이터를 활용하여,각 퍼널별 데이터 분석
 
 <br>
 <br>
@@ -50,4 +51,3 @@ Project Link | Tools |Description |
 - 데이터 사이언스 스쿨 | 제로베이스 
 - 백문이불여일타_데이터 분석을 위한 기초-고급 SQL | 인프
 - 데이터 시각화를 위한 태블로 | edwith
-
